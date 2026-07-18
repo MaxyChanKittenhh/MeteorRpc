@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: meteor-rpc
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python meteor_rpc.py
+    plan: free
